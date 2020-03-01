@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MESA Interviewing Session</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="main_css.css">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+        <script src="https://code.responsivevoice.org/responsivevoice.js?key=xUStRDBM"></script>
+        <audio id="myAudio">
+            <source src="call_sound_effect.mp3" type="audio/mpeg">
+        </audio>
+        <script src="interviewee.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-wrapper container">
+              <a href="index.html" class="brand-logo">
+                <img src="logo.jpg" style="width: 30px; border-radius: 50%;">
+              </a>
+              <span>Interviewing Session</span>
+            </div>
+        </nav>
+        <div align="center">
+            <h1 id="com">Company</h1>
+            <h2 id="count">Loading</h2>
+            <h3 id = "current">Current: </h3>
+            <h3 id = "next"> Next: </h3>
+            <br>
+            <h1 id="your_number"></h1>
+            <h3>Name</h3>
+            <input type="text" id="name" placeholder="Enter Your Name"><br>
+            <h3>Resume Link</h3>
+            <input type="url" id="link" placeholder="Resume Link / CV / Github"><br>
+            <button type="button" onclick="submit()">SUBMIT</button>
+        </div>
+        <script>
+            document.getElementById("com").innerHTML = company_name + " Interview";
+        </script>
+
+    </body>
+</html>

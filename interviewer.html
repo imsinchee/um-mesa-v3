@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MESA Interviewing Session</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="main_css.css">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+        <script src="interviewer.js"></script>
+        
+    </head>
+
+    <body>
+        <nav>
+            <div class="nav-wrapper container">
+              <a href="index.html" class="brand-logo">
+                <img src="logo.jpg" style="width: 30px; border-radius: 50%;">
+              </a>
+              <span>Interviewing Session</span>
+            </div>
+        </nav>
+        <div align="center">
+            <h1>Interviewer Page</h1>
+            <h2 id="display_count">Loading</h2>
+            <img class="center_img" src="logo.jpg" id='profile_pic'>
+            <br>
+            <h2 id="applicant_name" style="font-size: 40px;"></h2>
+            <br>
+            <a id="resumeurl" href="#" target="_blank" style="font-size: 30px;">Resume / CV</a>
+            <p></p>
+            <button type="button" onclick="call_again()" class="leftbtn">CALL AGAIN</button>
+            <button type="button" onclick="call_next()" class="rightbtn">NEXT APPLICANT</button>
+            <footer>
+                An Application Developed by MESA
+            </footer>
+
+        </div>
+
+    </body>
+</html>
